@@ -1,4 +1,4 @@
-package com.cydeo.utilities;
+package com.fleetgru.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

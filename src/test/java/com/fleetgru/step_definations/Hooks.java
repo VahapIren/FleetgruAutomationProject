@@ -1,8 +1,9 @@
-package com.cydeo.step_definations;
+package com.fleetgru.step_definations;
 
-import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.Driver;
-import io.cucumber.java.*;
+import com.fleetgru.utilities.BrowserUtils;
+import com.fleetgru.utilities.Driver;
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -33,7 +34,7 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
 
-        //Driver.closeDriver();
+        Driver.closeDriver();
        // System.out.println("====Closing browser using cucumber @After");
        // System.out.println("====Scenario ended/ Take screenshot if failed!");
     }

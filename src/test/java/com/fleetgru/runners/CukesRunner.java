@@ -1,4 +1,4 @@
-package com.cydeo.runners;
+package com.fleetgru.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,17 +10,13 @@ import org.junit.runner.RunWith;
                 //"pretty",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json"
         },
-
         features = "src/test/resources/features",
-        glue="com/cydeo/step_definations",
+        glue="com/fleetgru/step_definations",
         dryRun = false,
-        tags="@exercise1"
+        tags="@FLEET10-766"
 )
 public class CukesRunner {
-
-
-
 
 }

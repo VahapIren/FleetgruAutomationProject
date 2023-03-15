@@ -1,8 +1,6 @@
-package com.cydeo.utilities;
+package com.fleetgru.utilities;
 
-import com.cydeo.pages.DropDownsPages;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
