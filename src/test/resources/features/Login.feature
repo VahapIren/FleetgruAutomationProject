@@ -4,7 +4,7 @@ Feature: Login Functions
   Background:
     Given User is on the Fleetgru login page
 
-  @FLEET10-578
+  @FLEET10-578 @smoke
   Scenario: Login as a truck driver
     When User log in as a truck driver
     Then User should be on the "Quick Launchpad" page
