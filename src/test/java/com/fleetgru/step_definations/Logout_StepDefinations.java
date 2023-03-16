@@ -66,7 +66,7 @@ public class Logout_StepDefinations {
         ArrayList<String> tabs =new ArrayList<String>(Driver.getDriver().getWindowHandles());
         BrowserUtils.sleep(5);
 
-        int tabGoogle=0;
+        int tabGoogleNum =0;
         for (int i = 0; i < tabs.size(); i++) {
             Driver.getDriver().switchTo().window(tabs.get(i));
 
@@ -74,11 +74,11 @@ public class Logout_StepDefinations {
                 //tabs.remove(tabs.get(i));
                 Driver.getDriver().close();
             }else if(Driver.getDriver().getTitle().equals("Google"))
-                tabGoogle=i;
+                tabGoogleNum =i;
 
 
         }
-        Driver.getDriver().switchTo().window(tabs.get(tabGoogle));
+        Driver.getDriver().switchTo().window(tabs.get(tabGoogleNum));
 
         js.executeScript("window.open('https://qa.fleetgru.com/user/login','_blank');");
 
